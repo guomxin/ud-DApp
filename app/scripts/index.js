@@ -26,8 +26,21 @@ const createStar = async () => {
 }
 
 // Add a function lookUp to Lookup a star by ID using tokenIdToStarInfo()
-
+const lookUptokenIdToStarInfo = async () => {
+  const instance = await StarNotary.deployed();
+  const starId = document.getElementById("lookupStarId").value;
+  const starName = await instance.lookUptokenIdToStarInfo(starId, {from: account});
+  App.setStatus("The name of the star is " + starName + ".");
+}
 //
+
+const transferStar = async () => {
+  const instance = await StarNotary.deployed();
+  const starId = document.getElementById("transferStarId").value;
+  const toAddress = document.getElementById("transferAddress").value;
+  await instance.transferStar(starId, toAddress, {from: account});
+  App.setStatus("The star:" + starId + " is transfered to " + toAddress + ".");
+}
 
 const App = {
   start: function () {
@@ -62,6 +75,14 @@ const App = {
   createStar: function () {
     createStar();
   },
+
+  lookUptokenIdToStarInfo: function() {
+    lookUptokenIdToStarInfo();
+  },
+
+  transferStar: function() {
+    transferStar();
+  }
 
 }
 
