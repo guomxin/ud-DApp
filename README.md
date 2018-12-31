@@ -1,6 +1,6 @@
 # Decentralized Star Notary Service
 ## Token name: XinHouToken
 ## Token symbol: XHT
-## Token address: 0xbe8D0454A49CAc88fC4218FC53d71776b974E05b
-## Transaction hash: 0xbc04090c538ddb54e92f3357b9cd4445ebf7b76187ea2f94a38329bae372c1f9
+## Token address: 0x3163BEDa1Ec6EDDf321394A124FC81c7D3CFe356
+## Transaction hash: 0x54d5f0aca81d76725d5c620b8bf4dd1aac839ba1a7158a510d48318165649824 
 
